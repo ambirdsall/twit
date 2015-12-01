@@ -8,7 +8,11 @@ gem 'spring', :group => :development
 
 gem 'pg'
 
-gem 'pry-rails', :group => :development
+group :test, :development do
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'faker'
+end
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -22,4 +26,4 @@ gem 'unicorn'
 # Deploy with Capistrano
 # gem 'capistrano', :group => :development
 
-gem 'annotate'
+gem 'annotate', :group => :development
