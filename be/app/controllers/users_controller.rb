@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
-  def new
+  def index
+    @users = User.all
+
+    render json: @users
   end
 
   def create
@@ -11,6 +14,6 @@ class UsersController < ApplicationController
   protected
 
   def user_params
-
+    # TODO name, email, password
   end
 end
