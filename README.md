@@ -3,6 +3,8 @@ separate backbone front-end app.
 
 ## Todo
 #### Back-end
+[x] create models
+[ ] seed db
 [ ] add authentication
 [ ] add validations
 [ ] bang out naive implementation of all queries
