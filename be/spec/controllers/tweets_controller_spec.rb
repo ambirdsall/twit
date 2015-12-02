@@ -23,4 +23,21 @@ RSpec.describe TweetsController, type: :controller do
       expect(response.body).not_to eq other_user.tweets.to_json
     end
   end
+
+  context "GET user_tweet" do
+    it "gets a single tweet as JSON" do
+      first_tweet = @user.tweets.first
+      get :show, user_id: @user.id, id: first_tweet.id
+
+      expect(response.body).to eq first_tweet.to_json
+    end
+
+    it "returns a bad_request status if the user_id is wrong" do
+      first_tweet = @user.tweets.first
+      other_user  = FactoryGirl.create(:user)
+      get :show, user_id: other_user.id, id: first_tweet.id
+
+      expect(response).to have_http_status(400)
+    end
+  end
 end
