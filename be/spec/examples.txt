@@ -1,6 +1,0 @@
-example_id                                         | status  | run_time        |
--------------------------------------------------- | ------- | --------------- |
-./spec/controllers/users_controller_spec.rb[1:1:1] | passed  | 0.01658 seconds |
-./spec/models/tweet_spec.rb[1:1:1]                 | passed  | 0.36551 seconds |
-./spec/models/tweet_spec.rb[1:1:2]                 | passed  | 0.00168 seconds |
-./spec/models/user_spec.rb[1:1]                    | pending | 0.00002 seconds |
