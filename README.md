@@ -5,14 +5,14 @@ separate backbone front-end app.
 #### Back-end
 * [x] create models
 * [x] seed db
+* [x] add validations
+* [x] CRD app
+* [ ] CRUD app
 * [ ] add authentication
-* [ ] add validations
-* [ ] bang out naive implementation of all queries
-* [ ] then make them all efficient, with the proper indeces and eager-loading
 
 #### Front-end
 * [ ] get dependencies, `package.json` in order
 * [ ] create models
-* [ ] make styling decent
-* [ ] use sensible templating & partials
 * [ ] route it out
+* [ ] use sensible templating & partials
+* [ ] make styling decent
